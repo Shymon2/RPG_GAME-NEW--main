@@ -1,6 +1,7 @@
 package MAP;
 import CHARACTER.Player;
 import CHARACTER.RegularMonster;
+import CHARACTER.TargetMonster;
 import ITEM.*;
 
 public class Map1 extends Map{
@@ -16,7 +17,7 @@ public class Map1 extends Map{
         this.addItem(new Potion("Apple", 1, 0, 1));
         this.addItem(new Potion("Apple1", 2, 1, 1));
         this.addMonster(new RegularMonster("Orc", 50, 5, 0, 10, 10));
-        this.addMonster(new RegularMonster("Orc1", 50, 7, 0, 11, 10));
+        this.addMonster(new TargetMonster("Orc1", 50, 7, 0, 11, 10));
     }
 
 }
